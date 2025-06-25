@@ -15,7 +15,7 @@ def generate_reply(user_input):
     elif "set goal" in input_lower or "my goal is" in input_lower:
         goal = user_input.split("is")[-1].strip()
         set_goal(goal)
-        return f"Got it. I've saved your goal: "{goal}". Let’s work on it together!"
+        return f"Got it. I've saved your goal: '{goal}'. Let’s work on it together!"
 
     elif "show goals" in input_lower:
         goals = get_goals()
